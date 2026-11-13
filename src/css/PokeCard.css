@@ -1,0 +1,112 @@
+article {
+    width: 160px;
+    height: 200px;
+    border: 1px solid #436fff88;
+    box-shadow: 0px 0px 10px #43caff88;
+    background-color: #9eb4ffe8;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+article a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+article a:hover{
+    color: #fff;
+}
+
+article:hover {
+    box-shadow: 0px 0px 20px #43caff88;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+article:hover img {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.types{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+
+}
+
+.types span{
+    font-size: 12px;
+    font-weight: 300;
+    padding: 2px 7px;
+    border-radius: 200px;
+    background-color: var(--type-color, #436fff88);
+}
+
+[data-type="normal"] { --type-color: #c7c7c4; }
+[data-type="fire"] { --type-color: #e33504; }
+[data-type="water"] { --type-color: #3869c7; }
+[data-type="electric"] { --type-color: #ffd037; }
+[data-type="grass"] { --type-color: #487e27; }
+[data-type="ice"] { --type-color: #7de9ff; }
+[data-type="fighting"] { --type-color: #ae4a22; }
+[data-type="poison"] { --type-color: #a040a0; }
+[data-type="ground"] { --type-color: #cb9d33; }
+[data-type="flying"] { --type-color: #688dec; }
+[data-type="psychic"] { --type-color: #dc7695; }
+[data-type="bug"] { --type-color: #b0ca17; }
+[data-type="rock"] { --type-color: #89641f; }
+[data-type="ghost"] { --type-color: #705898; }
+[data-type="dragon"] { --type-color: #7038f8; }
+[data-type="dark"] { --type-color: #44372e; }
+[data-type="steel"] { --type-color: #737377; }
+[data-type="fairy"] { --type-color: #ffc2e0; }
+
+button{
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #436fff88;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-5px);
+    }
+
+    40% {
+        transform: translateY(5px);
+    }
+
+    70% {
+        transform: translateY(-5px);
+    }
+
+    80% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

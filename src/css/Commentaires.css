@@ -1,0 +1,85 @@
+.commentaires {
+    margin-top: 20px;
+    padding: 24px;
+    border: 1px solid #436fff55;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #25418f;
+    box-shadow: 0 4px 12px #43caff22;
+}
+
+.commentaires-note {
+    margin: 6px 0 20px;
+    color: #53658c;
+    font-size: 13px;
+}
+
+.commentaires-form,
+.commentaires-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.commentaires-form label {
+    font-weight: bold;
+}
+
+.commentaires-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #9eb4ff;
+    border-radius: 10px;
+    background-color: #f4f7ff;
+    color: #25418f;
+    font: inherit;
+    resize: vertical;
+}
+
+.commentaires-form textarea:focus-visible,
+.commentaires-form button:focus-visible {
+    outline: 2px solid #436fff;
+    outline-offset: 3px;
+}
+
+.commentaires-form button {
+    align-self: flex-start;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #436fff;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.commentaires-form button:hover:not(:disabled) {
+    background-color: #3055cf;
+}
+
+.commentaires-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.commentaires-list {
+    margin-top: 20px;
+}
+
+.commentaire {
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #eef3ff;
+}
+
+.commentaire time {
+    font-size: 12px;
+    color: #53658c;
+}
+
+.commentaire p {
+    margin-top: 8px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}

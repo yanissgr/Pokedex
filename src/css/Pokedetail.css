@@ -1,0 +1,98 @@
+body:has(.poke-details) {
+    background-image: none;
+}
+
+.poke-details::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-color: var(--type-color, #9eb4ff);
+}
+
+#back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#details {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#bottom{
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.stats {
+    width: 100%;
+    max-width: 360px;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #436fff88;
+    border-radius: 10px;
+    background-color: #eef3ff;
+    color: #25418f;
+    box-shadow: 0 4px 12px #43caff22;
+    font-size: 14px;
+}
+
+.stats caption {
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stats th,
+.stats td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.stats thead {
+    background-color: #436fff;
+    color: #fff;
+}
+
+.stats thead th:first-child {
+    border-top-left-radius: 9px;
+}
+
+.stats thead th:last-child {
+    border-top-right-radius: 9px;
+}
+
+.stats tbody tr:last-child th {
+    border-bottom-left-radius: 9px;
+}
+
+.stats tbody tr:last-child td {
+    border-bottom-right-radius: 9px;
+}
+
+.stats tbody tr + tr > * {
+    border-top: 1px solid #436fff22;
+}
+
+.stats tbody th {
+    font-weight: normal;
+}
+
+.stats tbody tr:nth-child(even) > * {
+    background-color: #dce6ff;
+}
+
+.stats td {
+    text-align: right;
+    font-weight: bold;
+}
