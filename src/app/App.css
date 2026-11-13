@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    cursor: url("./assets/pixel-cursor.svg") 2 2, auto;
+    cursor: url("../shared/assets/pixel-cursor.svg") 2 2, auto;
 }
 
 body{

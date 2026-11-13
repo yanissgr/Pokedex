@@ -1,4 +1,4 @@
-import '../css/Pagination.css'
+import './Pagination.css'
 
 interface PaginationProps {
     page: number

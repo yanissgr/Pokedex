@@ -1,7 +1,7 @@
 import { useState } from "react"
 import type { FormEvent } from "react"
-import "../css/Commentaires.css"
-import type { Comment } from "../types/pokemon"
+import "./Commentaires.css"
+import type { Comment } from "../model/types"
 
 function Commentaires() {
     const storageKey = "site-comments"

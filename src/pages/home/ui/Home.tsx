@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import PokeCard from "../Components/PokeCard"
-import Pagination from "../Components/Pagination"
-import api from "../Services/api"
-import type { Pokemon, PokemonListResponse } from "../types/pokemon"
-import '../css/Home.css'
+import { PokeCard } from "../../../entities/pokemon"
+import type { Pokemon, PokemonListResponse } from "../../../entities/pokemon"
+import { Pagination } from "../../../features/pagination"
+import { api } from "../../../shared/api"
+import './Home.css'
 
 const LIMIT = 100
 

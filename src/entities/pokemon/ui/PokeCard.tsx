@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
-import '../css/PokeCard.css'
-import type { Pokemon } from '../types/pokemon'
+import './PokeCard.css'
+import type { Pokemon } from '../model/types'
 
 function PokeCard({ pokemon }: { pokemon: Pokemon }) {
     return (

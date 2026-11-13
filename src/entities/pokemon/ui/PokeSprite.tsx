@@ -1,5 +1,6 @@
-import "../css/PokeSprite.css";
-import type { Pokemon } from "../types/pokemon"
+import "./PokeSprite.css";
+import "./PokeCard.css";
+import type { Pokemon } from "../model/types"
 
 function PokeSprite({ pokemon }: { pokemon: Pokemon }) {
     return (

@@ -3,10 +3,10 @@ import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import App from './App'
-import api from './Services/api'
+import { api } from '../shared/api'
 
 // On remplace l'appel réseau par un faux : les tests ne dépendent pas de PokeAPI
-vi.mock('./Services/api', () => ({ default: { get: vi.fn() } }))
+vi.mock('../shared/api', () => ({ api: { get: vi.fn() } }))
 
 const pikachu = {
   id: 25,

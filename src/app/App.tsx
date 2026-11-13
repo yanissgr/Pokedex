@@ -1,8 +1,8 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import Home from './Pages/Home'
-import PokeDetails from './Pages/PokeDetails'
+import { Home } from '../pages/home'
+import { PokeDetails } from '../pages/poke-details'
 
 function App() {
   

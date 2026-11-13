@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
-import api from "../Services/api"
-import "../css/PokeCard.css"
-import "../css/Pokedetail.css"
-import Commentaires from "../Components/Commentaires"
-import PokeSprite from "../Components/PokeSprite"
-import type { Pokemon } from "../types/pokemon"
+import { api } from "../../../shared/api"
+import "./PokeDetails.css"
+import { Commentaires } from "../../../features/comments"
+import { PokeSprite } from "../../../entities/pokemon"
+import type { Pokemon } from "../../../entities/pokemon"
 
 function PokeDetails() {
     const { id } = useParams()
